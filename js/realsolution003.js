@@ -6,5 +6,8 @@
 // solution('abc', 'd') // returns false
 
 function solution(str, ending) {
-    return str.slice(-ending.length) == ending ? true : false;
+    // if(ending.length == 0) return true
+    // return str.substr(-(ending.length)) == ending
+
+    return str.endsWith(ending)
 }
